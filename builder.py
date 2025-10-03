@@ -2,7 +2,6 @@ import json
 
 print("🚀 Iniciando o super arquiteto de carreiras...")
 
-# --- TRILHA 1: DESENVOLVIMENTO DE SOFTWARE (JÁ EXISTENTE E MELHORADA) ---
 trilha_dev_software = {
     "trackId": "dev_software",
     "trackName": "Desenvolvimento de Software",
@@ -17,7 +16,6 @@ trilha_dev_software = {
     "edges": [{"from": "dev_jr", "to": "dev_pl"}, {"from": "dev_pl", "to": "dev_sr"}, {"from": "dev_sr", "to": "tech_lead"}, {"from": "dev_sr", "to": "architect"}]
 }
 
-# --- TRILHA 2: CIÊNCIA DE DADOS ---
 trilha_ciencia_dados = {
     "trackId": "data_science",
     "trackName": "Ciência de Dados",
@@ -31,7 +29,6 @@ trilha_ciencia_dados = {
     "edges": [{"from": "data_analyst_jr", "to": "data_analyst_sr"}, {"from": "data_analyst_sr", "to": "data_scientist"}, {"from": "data_scientist", "to": "ml_specialist"}]
 }
 
-# --- TRILHA 3: CONTABILIDADE ---
 trilha_contabilidade = {
     "trackId": "contabilidade",
     "trackName": "Contabilidade",
@@ -45,7 +42,6 @@ trilha_contabilidade = {
     "edges": [{"from": "cont_assist", "to": "cont_analyst_jr"}, {"from": "cont_analyst_jr", "to": "cont_analyst_sr"}, {"from": "cont_analyst_sr", "to": "cont_controller"}]
 }
 
-# --- TRILHA 4: ÁREA ADMINISTRATIVA ---
 trilha_administrativa = {
     "trackId": "administrativo",
     "trackName": "Administrativo",
@@ -59,7 +55,6 @@ trilha_administrativa = {
     "edges": [{"from": "adm_assist", "to": "adm_analyst"}, {"from": "adm_analyst", "to": "adm_coord"}, {"from": "adm_coord", "to": "adm_manager"}]
 }
 
-# --- TRILHA 5: RECURSOS HUMANOS ---
 trilha_rh = {
     "trackId": "rh",
     "trackName": "Recursos Humanos",
@@ -73,7 +68,6 @@ trilha_rh = {
     "edges": [{"from": "rh_assist", "to": "rh_analyst"}, {"from": "rh_analyst", "to": "rh_bp"}, {"from": "rh_bp", "to": "rh_manager"}]
 }
 
-# --- TRILHA 6: MARKETING DIGITAL ---
 trilha_marketing_digital = {
     "trackId": "marketing_digital",
     "trackName": "Marketing Digital",
@@ -87,7 +81,6 @@ trilha_marketing_digital = {
     "edges": [{"from": "mkt_assist", "to": "mkt_analyst"}, {"from": "mkt_analyst", "to": "mkt_specialist"}, {"from": "mkt_specialist", "to": "mkt_manager"}]
 }
 
-# --- TRILHA 7: UI/UX DESIGN ---
 trilha_design = {
     "trackId": "ui_ux_design",
     "trackName": "UI/UX Design",
@@ -101,8 +94,6 @@ trilha_design = {
     "edges": [{"from": "design_jr", "to": "design_pl"}, {"from": "design_pl", "to": "design_sr"}, {"from": "design_sr", "to": "product_designer"}]
 }
 
-# --- JUNTANDO TUDO ---
-# Agora criamos uma lista com todas as nossas trilhas de carreira.
 all_tracks = [
     trilha_dev_software,
     trilha_ciencia_dados,
@@ -113,7 +104,6 @@ all_tracks = [
     trilha_design
 ]
 
-# Salvando a lista completa no nosso arquivo JSON.
 try:
     with open('career_path.json', 'w', encoding='utf-8') as f:
         json.dump(all_tracks, f, ensure_ascii=False, indent=4)
@@ -121,4 +111,5 @@ try:
     for track in all_tracks:
         print(f"  - {track['trackName']}")
 except Exception as e:
+
     print(f"❌ Erro ao criar o arquivo JSON: {e}")
