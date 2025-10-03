@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Carreira Interativo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mapa de Carreira Interativo</h1>
+        <br>
+        <p>Desenvolvido por Vinicius Oliveira - Estudante de Análise e Desenvolvimento de Sistemas</p>
+        <div class="controls">
+            <label for="track-selector">Escolha uma trilha de carreira:</label>
+            <select id="track-selector"></select>
+        </div>
+        <p id="track-description">Selecione uma trilha para começar.</p>
+    </header>
+
+    <main class="container">
+        <div id="career-map"></div>
+        <aside id="details-sidebar" class="sidebar-hidden">
+            <h2 id="details-title">Selecione um Cargo</h2>
+            <p id="details-description">Os detalhes sobre o cargo selecionado aparecerão aqui.</p>
+            <div id="details-skills">
+                <h3>Hard Skills</h3>
+                <ul id="hard-skills-list"></ul>
+                <h3>Soft Skills</h3>
+                <ul id="soft-skills-list"></ul>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
