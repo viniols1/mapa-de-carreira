@@ -26,5 +26,5 @@ Ele foi desenvolvido utilizando **HTML, CSS e JavaScript**, com suporte de um **
 
 ---
 
-## Desenvolvedor 
+## 💻 Desenvolvedor 
 Vinicius Oliveira - Estudante de Análise e Desenvolvimento de Sistemas
