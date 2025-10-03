@@ -1,6 +1,6 @@
 # 🚀 Mapa de Carreira
 
-Este projeto tem como objetivo apresentar um **mapa de carreira interativo**, exibindo de forma visual e organizada os principais passos de evolução profissional dentro da área de tecnologia.  
+Este projeto tem como objetivo apresentar um **mapa de carreira interativo**, exibindo de forma visual e organizada os principais passos de evolução profissional dentro da área de tecnologia e outras.  
 
 Ele foi desenvolvido utilizando **HTML, CSS e JavaScript**, com suporte de um **script em Python** para geração e manipulação dinâmica dos dados.
 
