@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const detailsDescription = document.getElementById('details-description');
     const hardSkillsList = document.getElementById('hard-skills-list');
     const softSkillsList = document.getElementById('soft-skills-list');
-    const trackSelector = document.getElementById('track-selector'); // Nosso novo menu
+    const trackSelector = document.getElementById('track-selector');
     const trackDescription = document.getElementById('track-description');
 
     let allTracksData = null;
@@ -118,4 +118,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     loadCareerData();
+
 });
